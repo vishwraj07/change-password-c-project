@@ -25,3 +25,16 @@ void getHiddenPassword(char password[]) {
         }
     }
 }
+
+// Function to read the old password from file
+int readOldPassword(char oldPass[]) {
+    FILE *fp = fopen("password.txt", "r");
+
+    if (fp == NULL) {
+        return 0;  // file not found -> no password saved yet
+    }
+
+    fscanf(fp, "%s", oldPass);
+    fclose(fp);
+    return 1;  // successfully read
+}
