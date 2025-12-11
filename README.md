@@ -6,7 +6,6 @@ C project implementing a change password system using file handling.
 This is a diploma-level C project that implements a **Change Password system** with file handling.  
 The program allows users to securely change their password, showing `*` while typing.
 
----
 
 ## My Experience & Learning
 Working on this project was a **practical journey** from finding a real bug in my college app to implementing a solution in C.  
